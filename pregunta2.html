@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pregunta Nro 2</title>
+
+<link rel="stylesheet" href="bootstrap.css">
+
+<script type="text/javascript">
+	
+	function esPrimo(numero) {
+		var condicion = true;
+		var total = 1;
+		for (var i = 2; i <= numero; i++) {
+			cont= 2;
+			while((condicion) && (cont<i)){
+				if (i % cont === 0) {
+				 condicion = false;
+				}
+				cont++;
+			}
+			if(condicion){
+				total= total + 1;
+			}
+			else{
+				condicion=true;
+			}
+
+		}
+		window.alert("Numero total de numero primos: " + total);
+
+	} 
+
+	function pregunta(){
+		var numero = prompt("Ingrese hasta el numero que desea verificar");
+		esPrimo(numero);
+	}
+
+</script>
+
+</head>
+<body>
+
+<div class="jumbotron">
+	<div class="container">
+		<center class="well">
+
+		<p>2. Escribir un programa en JavaScript que indique Cuantos numeros primos hay de 1 a n.  </p>
+
+		<button onclick="pregunta()" class="btn btn-default">Probar</button>
+
+		</center>
+	</div>
+</div>
+
+
+</body>
+</html>

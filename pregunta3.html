@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pregunta Nro 3</title>
+
+<link rel="stylesheet" href="bootstrap.css">
+
+<script type="text/javascript">
+	
+    function invertir(cadena) {
+	    var x = cadena.length;
+	    var cadenaInvertida = "";
+	     
+	    while (x>=0) {
+		    cadenaInvertida = cadenaInvertida + cadena.charAt(x);
+		    x--;
+	    }
+	    window.alert("El numero ingresado es: "+ cadena +"\n Al invertirlo queda: " + cadenaInvertida);
+    }
+
+	function pregunta(){
+		var cadena = prompt("Ingrese el numero entero que desea invertir");
+		invertir(cadena);
+	}
+
+</script>
+
+</head>
+<body>
+
+<div class="jumbotron">
+	<div class="container">
+		<center class="well">
+
+		<p>3. Escribir un programa en JavaScript que lea un numero entero e imprimirlo al reves. </p>
+
+		<button onclick="pregunta()" class="btn btn-default">Probar</button>
+
+		</center>
+	</div>
+</div>
+
+</body>
+</html>

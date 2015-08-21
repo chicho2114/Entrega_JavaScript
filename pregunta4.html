@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pregunta Nro 4</title>
+
+<link rel="stylesheet" href="bootstrap.css">
+
+<script type="text/javascript">
+	
+    function contar() {
+    	var cantImpares=0;
+    	var cantPares=0;
+    	var acumPares=0;
+    	var acumImpares=0;
+    	var mediaPares=0;
+    	var mediaImpares=0;
+
+    	for (var i = 1; i <= 200; i++) {
+    		if(i%2===0){
+    			cantPares++;
+    			acumPares = acumPares + i;
+    		}
+    		else{
+    			cantImpares++;
+    			acumImpares = acumImpares + i;
+    		}
+    	};
+    	mediaImpares= acumImpares/cantImpares;
+    	mediaPares= acumPares/cantPares;
+
+	    window.alert("Suma de numero impares: " + acumImpares + "\nMedia de numeros impares: " + mediaImpares  + "\nSuma de numero pares: " + acumPares + "\nMedia de numeros pares:"+ mediaPares );
+    }
+
+
+</script>
+
+</head>
+<body>
+
+<div class="jumbotron">
+	<div class="container">
+		<center class="well">
+
+		<p>4. Escribir un programa que calcule, independientemente, la suma y la media de los numeros pares e impares comprendidos entre 1 y 200. </p>
+
+		<button onclick="contar()" class="btn btn-default">Probar</button>
+
+		</center>
+	</div>
+</div>
+
+</body>
+</html>
